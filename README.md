@@ -1,8 +1,9 @@
 # AirSim-RL
 This project provides experiments with Deep Reinforcement Learning on autonomous vehicles (car and uav drone) in [AirSim](https://github.com/microsoft/AirSim). Currently, [Keras-RL](https://github.com/keras-rl/keras-rl), [OpenAI Gym](https://gym.openai.com/) are used to facilitate training models.
 
-## Demo
-[![Demo Video](images/thumbnail.png)](https://youtu.be/oiGjnpcPB_8)
+## Demo 
+###(click in the image to watch the clip)
+[![Demo Video](http://img.youtube.com/vi/oiGjnpcPB_8/0.jpg)](https://youtu.be/oiGjnpcPB_8)
 * In this demo, The Deep Q Network (DQN) is used. The reward calculated based on the distance between the car to the center of the track. The episode stops when it is close to off track.
 * The input for training is frames of RGB image captured from the front camera. 
 
@@ -10,8 +11,8 @@ This project provides experiments with Deep Reinforcement Learning on autonomous
 * Build AirSim, Unreal Engine 4 (UE4) on Windows (https://github.com/microsoft/AirSim/blob/master/docs/build_windows.md)
 * Create a new UE4 project with map [RaceCourse](https://github.com/microsoft/AirSim/wiki/build_FSTDriverless_windows)
 * Install conda an environment with the important packages: python 3.7, tensorflow 1.14, keras 2.2.5 , keras-rl 0.4.2, gym 0.17.2 (The versions come along are just for reference)
-* Arrange some waypoints in the center of the road and name it as "WayPoints[number]" (see the following picture). This list of waypoints is used to locate the road approximately in map. Car's position and waypoints are used in calculate the reward during training.
-![screenshot](images/waypoint-actor.png)
+* Arrange some waypoints in the center of the road and name it as "WayPoints[number]" (see the following picture). This list of waypoints is used to locate the road approximately in map. Car's position and waypoints are used in calculate the reward during training. As illustrated below, UE4 'Empty Actors' are used as waypoints. These waypoints are invisible when the game is running.
+![waypoints](images/waypoint_actor.png)
 
 ## How to train
 * First take a look in the parameters in Config.ini file to understand some settings, like input image resolution, action space of the agent, etc.

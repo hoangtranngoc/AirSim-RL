@@ -44,12 +44,11 @@ actions = 7
 * Then, run the jupyter notebook (or train.py)
 
 ## TODO
-* Expand action spaces, observation spaces, and reward functions
+* Expand action spaces, try more reward functions
 * Add OpenAi gym env for UAV drone
-* More experiments with Car and UAV
 
 ## References
 * [create custom open ai gym environment](https://stable-baselines.readthedocs.io/en/master/guide/custom_env.html)
 * [training dqn with keras-rl](https://github.com/keras-rl/keras-rl/blob/master/examples/dqn_atari.py) how to use keras-rl with atari game
-* https://github.com/Kjell-K/AirGym This project has tried DQN with drone and depth image in AirSim
+* https://github.com/Kjell-K/AirGym
 * [AWS DeepRacer](https://docs.aws.amazon.com/deepracer/latest/developerguide/what-is-deepracer.html)

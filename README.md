@@ -1,11 +1,11 @@
 # AirSim-RL
-This project provides experiments with Deep Reinforcement Learning on autonomous vehicles (car and uav drone) in [AirSim](https://github.com/microsoft/AirSim). Currently, [Keras-RL](https://github.com/keras-rl/keras-rl), [OpenAI Gym](https://gym.openai.com/) are used to facilitate training models.
+This project provides experiments with Deep Reinforcement Learning on autonomous vehicles (car and uav drone) in [AirSim](https://github.com/microsoft/AirSim). Currently, [Keras-RL](https://github.com/keras-rl/keras-rl) and [OpenAI Gym](https://gym.openai.com/) are used to facilitate training models.
 
 ## Demo 
 ###(click in the image to watch the clip)
-[![Demo Video](http://img.youtube.com/vi/oiGjnpcPB_8/0.jpg)](https://youtu.be/oiGjnpcPB_8)
+[![Demo Video](images/thumbnail.png)](https://youtu.be/oiGjnpcPB_8)
 * In this demo, The Deep Q Network (DQN) is used. The reward calculated based on the distance between the car to the center of the track. The episode stops when it is close to off track.
-* The input for training is frames of RGB image captured from the front camera. 
+* The input for training is frames of RGB image captured from the head-front camera on car. 
 
 ## How do I set up my environment
 * Build AirSim, Unreal Engine 4 (UE4) on Windows (https://github.com/microsoft/AirSim/blob/master/docs/build_windows.md)
@@ -46,7 +46,8 @@ actions = 7
 
 ## TODO
 * Expand action spaces, try more reward functions
-* Add OpenAi gym env for UAV drone
+* Add OpenAI Gym env for UAV drone
+* Try OpenAI Baseline, Stable Baselines libraries
 
 ## References
 * [create custom open ai gym environment](https://stable-baselines.readthedocs.io/en/master/guide/custom_env.html)

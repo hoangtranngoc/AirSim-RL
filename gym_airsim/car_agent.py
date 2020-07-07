@@ -44,7 +44,7 @@ class CarAgent(CarClient):
             img1d_rgb = np.frombuffer(response.image_data_uint8, dtype=np.uint8)
             size = img1d_rgb.size
             
-        img3d_rgb = img1d_rgb.reshape(self.image_width, self.image_height, self.image_channels)
+        img3d_rgb = img1d_rgb.reshape(self.image_height, self.image_width, self.image_channels)
         return img3d_rgb
     
     def move(self, action):
